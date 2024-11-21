@@ -7,65 +7,76 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Tiny5&display=swap"
     />
-       <style>
-      .flip-card {background-color: black;
-  width: 400px;
-  height: 350px;
-  perspective: 1000px;}
-      .flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
+    <style>
+            .flip-card {background-color: white;
+        width: 250px;
+        height: 250px;
+        perspective: 1000px;}
+            .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      }
 
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
 
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
 
-.flip-card-front {
-  background-color: brown;
-  color: black;
-}
+      .flip-card-front {
+        background-color: rgb(212, 246, 255);
+        color: black;
+      }
 
-.flip-card-back {
-  background-color: grey;
-  color: white;
-  transform: rotateY(180deg);
-}
+      .flip-card-back {
+        background-color: grey;
+        color: white;
+        transform: rotateY(180deg);
+      }
+               .main{
+                 background-color:rgb(179, 200, 207);*/
+                 display:flex;
+                 justify context:space-around:
+                   flex-wrap:wrap;
+               }
+      #title :
     </style>
   </head>
   <body>
- 
-<h1>Jungle Animals</h1>
-
-    <div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="https://lumiere-a.akamaihd.net/v1/images/h_tarzan_19875_mobile_ticketnumber_19deb65f.jpeg?region=0,0,640,480" alt="tarzan" style="width:400px;height:350px;">
+    <h1 id="title"> Hello Kitty + Friends!</h1>
+    <div class="main">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="https://media2.giphy.com/media/92YG8KKSjYhMc/200w.gif?cid=6c09b952gzfx5bvfrykdpcwj86b0dupffo804wjt1d8dnjo8&ep=v1_gifs_search&rid=200w.gif&ct=g"
+              alt="hello-kitty"
+              style="width: 250px; height: 250px"
+            />
+            <img src="https://media.giphy.com/media/cQSjIBgUC2NbMKEm9q/giphy.gif">
+          </div>
+          <div class="flip-card-back">
+            <h2 class="title">Hello Kitty</h2>
+            <p>
+              He is the most fiece, and educated animal in the jungle. He has
+              adapted multiple animal traits in order to survive in the
+              enviorment he was born in .
+            </p>
+            <p>He's not technically an animal...</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="flip-card-back">
-      <h2>Tarzan</h2>
-      <p>He is the most fiece, and educated animal in the jungle. He has adapted multiple animal traits in order to survive in the enviorment he was born in .
-      </p>
-      <p> He's not technically an animal...</p>
-    </div>
-  </div>
-</div>
-    
-   
-   
   </body>
 </html>
-
